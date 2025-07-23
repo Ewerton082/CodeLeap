@@ -6,4 +6,4 @@ from .models import User
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ("id", "user", "posts_counts")
+    list_display = ("id", "user")

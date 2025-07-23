@@ -9,7 +9,6 @@ class Posts(models.Model):
     title = models.CharField(max_length=60, null=False, blank=False, verbose_name="Post Title")
     content = models.TextField(blank=False, null=False, verbose_name="Post Content")
 
-
     def __str__(self):
         return f"{self.title} | {self.created_datetime}"
 
