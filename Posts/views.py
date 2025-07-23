@@ -1,9 +1,9 @@
-from rest_framework import generics, status
+from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from .models import Posts, Like
-from .serializers import PostsSerializer,PostSerializerEdit, LikeCreateSerializer, LikeSerializer, LikeDeleteSerializer
+from .serializers import PostsSerializer, PostSerializerEdit, LikeCreateSerializer, LikeSerializer, LikeDeleteSerializer
 
 
 class PostListCreate(generics.ListCreateAPIView):

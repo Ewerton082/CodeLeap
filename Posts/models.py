@@ -1,10 +1,11 @@
 from django.db import models
+
 from Users.models import User
 
 
 class Posts(models.Model):
 
-    user = models.ForeignKey(to=User, on_delete=models.CASCADE,blank=False, null=False, verbose_name="Owner Post")
+    user = models.ForeignKey(to=User, on_delete=models.CASCADE, blank=False, null=False, verbose_name="Owner Post")
     created_datetime = models.DateTimeField(auto_now_add=True, verbose_name="Created Data")
     title = models.CharField(max_length=60, null=False, blank=False, verbose_name="Post Title")
     content = models.TextField(blank=False, null=False, verbose_name="Post Content")

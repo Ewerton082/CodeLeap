@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from .models import Posts, Like
 
 
@@ -10,4 +11,3 @@ class PostAdmin(admin.ModelAdmin):
 @admin.register(Like)
 class LikeAdmin(admin.ModelAdmin):
     list_display = ('id', 'user', 'post', 'created_datetime')
-
