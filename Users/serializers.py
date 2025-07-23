@@ -8,7 +8,7 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = "__all__"
-        read_only_fields = ['id', 'posts']
+        read_only_fields = ['id']
 
     def validate_username(self, value):
 
